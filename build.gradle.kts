@@ -8,9 +8,9 @@ plugins {
 publishing{
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.github.username"
-            artifactId = "library-name"
-            version = "1.0.0"
+            groupId = "com.github.apstergo"
+            artifactId = "CollapsingPagerIndicator"
+            version = "1.0.6"
 
             from(components["kotlin"])
         }
