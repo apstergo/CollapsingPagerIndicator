@@ -4,3 +4,15 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     id("maven-publish")
 }
+
+publishing{
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.username"
+            artifactId = "library-name"
+            version = "1.0.0"
+
+            from(components["kotlin"])
+        }
+    }
+}
