@@ -13,7 +13,7 @@ publishing{
             version = "1.0.8"
 
             afterEvaluate {
-                from(components["release"])
+                from(components["debug"])
             }
         }
     }
