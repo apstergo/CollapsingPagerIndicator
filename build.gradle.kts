@@ -10,10 +10,10 @@ publishing{
         create<MavenPublication>("maven") {
             groupId = "com.github.apstergo"
             artifactId = "CollapsingPagerIndicator"
-            version = "1.0.9"
+            version = "1.0.10"
 
             afterEvaluate {
-                from(components["debug"])
+                from(components.findByName("release"))
             }
         }
     }
